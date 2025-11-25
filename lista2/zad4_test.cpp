@@ -81,6 +81,7 @@ void bucketSort(double A[], int n)
             A[idx++] = B[i].arr[j];
             przypisania++;
         }
+        free(B[i].arr);
     }
 
     delete[] B;
