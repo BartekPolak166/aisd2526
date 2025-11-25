@@ -56,6 +56,7 @@ void bucketSort(double A[], int n)
         {
             A[idx++] = B[i].arr[j];
         }
+        free(B[i].arr);
     }
 
     delete[] B;
